@@ -1,82 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: linear-gradient(to right, #fc00ff, #00dbde);
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin: 3rem 0;
-    color: white;
-    text-shadow: 3px 3px #00dbde;
-    font-family: 'Pacifico', cursive;
-  }
-  
-  table {
-    width: 400px; 
-    height: 0px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .displayNumbers {
-    padding-top: 10px;
-    width: 400px;
-    overflow:auto;
-    font-size: 3rem;
-    padding: 1rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 20px 20px 0 0;
-  }
-  
-  button {
-    font-size: 2rem;
-    width: 100%;
-    height: 4.3rem;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 0;
-    transition: all 0.3s ease;
-  }
-  
-  .num {
-    color: #000;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
-  }
-  
-  button:active {
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-  }
-  
-  .num:active {
-    background-color: #00dbde;
-    color: white;
-  }
-  
-  td {
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
- 
+body {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: white;
+  text-shadow: 3px 3px #00dbde;
+  font-family: "Pacifico", cursive;
+}
+
+table {
+  width: 400px;
+  height: 0px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.displayNumbers {
+  padding: 1rem;
+  padding-top: 10px;
+  width: 400px;
+  overflow: auto;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px 20px 0 0;
+}
+
+button {
+  font-size: 2rem;
+  width: 100%;
+  height: 4.3rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.num {
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.num:active {
+  background-color: #00dbde;
+  color: white;
+}
+
+td {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
