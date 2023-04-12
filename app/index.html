@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="index.js"></script>
+  <title>Ultimate Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png">
 </head>
+
 <body>
-  
+
+  <h1>Welcome to the Ultimate Calculator!</h1>
+  <table>
+    <tr>
+      <th colspan="4">
+        <div class="displayNumbers">&nbsp;</div>
+      </th>
+    </tr>
+    <tr class="row 1">
+      <td><button class="deleteAll">AC</button></td>
+      <td><button class="delete">C</button></td>
+      <td><button class="sqrt">√</button></td>
+      <td><button class="division">÷</button></td>
+    </tr>
+    <tr class="row 2">
+      <td><button class="num" value="7">7</button></td>
+      <td><button class="num" value="8">8</button></td>
+      <td><button class="num" value="9">9</button></td>
+      <td><button class="product">×</button></td>
+    </tr>
+    <tr class="row 3">
+      <td><button class="num" value="4">4</button></td>
+      <td><button class="num" value="5">5</button></td>
+      <td><button class="num" value="6">6</button></td>
+      <td><button class="substraction">-</button></td>
+    </tr>
+    <tr class="row 4">
+      <td><button class="num" value="1">1</button></td>
+      <td><button class="num" value="2">2</button></td>
+      <td><button class="num" value="3">3</button></td>
+      <td><button class="addition">+</button></td>
+    </tr>
+    <tr class="row 5">
+      <td colspan="2"><button class="num" value="0">0</button></td>
+      <td><button class="decimalPoint">.</button></td>
+      <td><button class="equal">=</button></td>
+    </tr>
+  </table>
 </body>
+
 </html>
