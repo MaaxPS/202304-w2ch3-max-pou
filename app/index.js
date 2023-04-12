@@ -1,28 +1,29 @@
-let numbers = document.querySelectorAll(".num");
-let deleteAll = document.querySelector(".deleteAll");
-let deleteButton = document.querySelector(".delete");
-let sqrt = document.querySelector(".sqrt");
-let division = document.querySelector(".division");
-let subtraction = document.querySelector(".substraction");
-let addition = document.querySelector(".addition");
-let product = document.querySelector(".product");
-let decimanlPoint = document.querySelector(".decimalPoint");
-let equal = document.querySelector(".equal");
-let displayNumbers = document.querySelector(".displayNumbers");
-let numbersSave = [],
-  actualNumber = [],
-  operator = [],
-  result,
-  lastEqual = false,
-  isInfinite = false;
+const numbers = document.querySelectorAll(".num");
+const deleteAll = document.querySelector(".deleteAll");
+const deleteButton = document.querySelector(".delete");
+const sqrt = document.querySelector(".sqrt");
+const division = document.querySelector(".division");
+const subtraction = document.querySelector(".substraction");
+const addition = document.querySelector(".addition");
+const product = document.querySelector(".product");
+const decimanlPoint = document.querySelector(".decimalPoint");
+const equal = document.querySelector(".equal");
+const displayNumbers = document.querySelector(".displayNumbers");
+let numbersSave = [];
+let actualNumber = [];
+let operator = [];
+let result;
+let lastEqual = false;
+let isInfinite = false;
 
 sqrt.addEventListener("click", () => {
   result = Math.sqrt(Number(actualNumber.join("")));
   displayNumbers.innerHTML = result;
   actualNumber = [];
-  for (let i = 0; i < result.toString().length; i++) {
-    actualNumber.push(result.toString()[i]);
+  for (const value of result.toString()) {
+    actualNumber.push(value);
   }
+
   lastEqual = true;
   numbersSave = [];
   operator = [];
@@ -53,21 +54,24 @@ equal.addEventListener("click", () => {
       case "/":
         result /= numbersSave[i + 1];
         break;
+        default:
     }
   }
+
   if (!isFinite(result)) {
     displayNumbers.innerHTML = "Math Error";
     result = 0;
     isInfinite = true;
-  } else {
+  } else if(isFinite(result)){
     displayNumbers.innerHTML = result;
     numbersSave = [];
     operator = [];
     actualNumber = [];
-    for (let i = 0; i < result.toString().length; i++) {
-      actualNumber.push(result.toString()[i]);
+    for (const value of result.toString()) {
+      actualNumber.push(value);
     }
   }
+
   lastEqual = true;
 });
 
@@ -152,6 +156,7 @@ numbers.forEach((number) => {
       displayNumbers.innerHTML = "&nbsp";
       lastEqual = false;
     }
+
     displayNumbers.innerHTML += number.value;
     actualNumber.push(number.value);
   });
